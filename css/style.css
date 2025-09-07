@@ -1,0 +1,50 @@
+/* Variables globales */
+:root {
+  --color-fondo: #f4f4f4;
+  --color-texto: #333;
+  --color-primario: #3498db;
+  --fuente: 'Segoe UI', sans-serif;
+  --espaciado: 20px;
+}
+
+body {
+  background-color: var(--color-fondo);
+  color: var(--color-texto);
+  font-family: var(--fuente);
+  padding: var(--espaciado);
+  transition: all 0.3s ease;
+}
+
+header {
+  background-color: var(--color-primario);
+  color: white;
+  padding: var(--espaciado);
+  text-align: center;
+}
+
+main {
+  margin-top: var(--espaciado);
+}
+
+/* Estilos para pantallas móviles */
+@media (max-width: 768px) {
+  body {
+    background-color: #e0f7fa;
+    font-size: 14px;
+  }
+
+  header {
+    font-size: 18px;
+  }
+}
+
+/* Estilos para escritorio */
+@media (min-width: 769px) {
+  body {
+    font-size: 18px;
+  }
+
+  header {
+    font-size: 24px;
+  }
+}
